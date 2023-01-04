@@ -1,0 +1,197 @@
+{
+    "productosDestacados":[
+        {
+            "title":"Moledor",
+            "price": 1450,
+            "productId": 1,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "id": 1,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        }
+        ,{
+            "title":"Moledor L",
+            "price": 3450,
+            "productId": 1,
+            "count":1,
+            "id": 2,
+            "img":"./assets/apple-1282241_640.jpg",
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Moledor Xl",
+            "price": 6450,
+            "productId": 1,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "id": 3,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Papelillos Row",
+            "price": 1150,
+            "productId": 1,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "id": 4,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Papelillos Rolling",
+            "price": 1850,
+            "productId": 1,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "id": 5,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Papelillos OCB",
+            "price": 1350,
+            "productId": 2,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "id": 6,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Pipa sh ONE",
+            "price": 1550,
+            "productId": 2,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "id": 7,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Pipa sh TWO",
+            "price": 2850,
+            "productId": 2,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "id": 8,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Pipa sh Retro",
+            "price": 3150,
+            "productId": 2,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "id": 9,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Bong Percolador",
+            "price": 10450,
+            "productId": 2,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "id": 10,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        }
+
+    ],
+    "productosOferta":[
+        {
+            "title":"papelillos Smoking",
+            "price": 1250,
+            "oldPrice": 2350,
+            "id": 1,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 1,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        }
+        ,{
+            "title":"Pipa sh Three",
+            "price": 1150,
+            "oldPrice": 1850,
+            "id": 2,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 1,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Papelillos Dolar",
+            "price": 1850,
+            "oldPrice": 2350,
+            "id": 3,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 1,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Pipa Gris",
+            "price": 1850,
+            "oldPrice": 2350,
+            "id": 4,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 1,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Moledor xs",
+            "price": 1850,
+            "oldPrice": 2650,
+            "id": 5,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 1,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Bong MINI",
+            "price": 5850,
+            "oldPrice": 7350,
+            "id": 6,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 2,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Bong Retro",
+            "price": 15850,
+            "oldPrice": 20350,
+            "id": 7,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 2,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Pipa Clown",
+            "price": 4850,
+            "oldPrice": 6350,
+            "id": 8,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 2,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Papelillos OCB light",
+            "price": 1050,
+            "oldPrice": 1950,
+            "id": 9,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 2,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        },
+        {
+            "title":"Pipa sx",
+            "price": 5350,
+            "oldPrice": 8350,
+            "id": 10,
+            "count":1,
+            "img":"./assets/apple-1282241_640.jpg",
+            "productId": 2,
+            "description":"Contrary to popular belief, Lorem Ipsum is not"
+        }
+    ]
+}

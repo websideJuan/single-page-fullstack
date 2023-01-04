@@ -1,0 +1,606 @@
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Quattrocento', serif;
+    font-weight: 700;
+}
+
+p,span,b,label{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.btn{
+    padding: .0rem .2rem;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    border-bottom: .1rem solid;
+}
+
+.cta{
+    color: white;
+    border: .1rem solid;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.btn:active{
+    color: lightpink;
+    outline: .1rem solid lightpink;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.325);
+}
+
+.d-none{
+    display: none;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+
+    border-bottom: .1rem solid lightgray;
+    margin-bottom: .5rem;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+    padding: 1rem;
+    gap: 1rem 0;
+    align-items: center;
+}
+
+.nabvar__items{
+    position: fixed;
+    inset: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #202020cc;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    transform: translate(-100%);
+    transition: transform 1s;
+}
+
+ul.showMenuTransform{
+    transform: translate(0);
+}
+
+.nav__links{
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.nav__links::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: -10%;
+    left: 0;
+    transition: width .2s, height .7s;
+}
+
+.nav__links:hover::after{
+    height: 100%;
+    width: 1px;
+    left: -10%;
+}
+
+.navbar__logo{
+    grid-column: 1/3;
+    font-weight: bold;
+}
+
+.navbar__logo p{
+    color: black;
+    font-size: 1.3rem;
+}
+
+.navbar__form{
+    grid-column: 1/6;
+    width: 100%;
+}
+
+.intp-search{
+    width: 100%;
+    padding: .6rem .0rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    border-bottom: .1rem solid lightgray;
+    outline: none;
+    background-color: transparent;
+}
+
+.navbar__menu{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.btn--menu{
+    border: none;
+    padding: 8px 11px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 4;
+    color: black;
+}
+
+.navbar__menu i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+
+.user{
+    border: .1rem solid ;
+    padding: .1rem .3rem;
+    border-radius: 50%;
+}
+
+.btns a{
+    color: black ;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.hero-front{
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.container__imgHero{
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.325));
+    color: white;
+    height: 100vh;
+    text-align: center;
+    gap: 1rem;
+    padding: 0rem 1rem;
+}
+
+.hero__title{
+    font-size: 2.9rem;
+}
+
+.subNavbar__items{
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(7, max-content);
+    justify-content: space-between;
+    gap: 3px;
+    padding: 0rem .5rem;
+    border: .1rem solid lightgray;
+    border-top: none;
+    border-radius: .4rem;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+.subNavbar__item{
+    padding: .5rem 1.5rem;
+    font-size: 1.9rem;
+    transition: box-shadow .5s ease, background-color .4s;
+    display: flex;
+    gap: .5rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.subNavbar__dropdwn{
+    transition: height .5s ease;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(211, 211, 211, 0.632);
+    z-index: 3;
+    overflow-y: hidden;
+}
+
+.subNavbar__item:hover .subNavbar__dropdwn{
+    height: 200px;
+}
+
+.dropdwn__items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
+}
+
+.dropdwn__item:hover{
+    background: rgb(211, 211, 211);
+}
+
+.dropdwn__item{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.dropdwn__link{
+    color: white;
+}
+
+.subNavbar__item:hover{
+    box-shadow: 0 10px 35px -15px rgba(0, 0, 0, 0.325);
+    background-color: rgba(211, 211, 211, 0.589);
+}
+
+.subNavbar__item i{
+    font-size: 1.3rem;
+    color: lightgray;
+}
+
+.subNavbar__item p{
+    font-size: .8rem;
+}
+
+.growInfo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    padding: 50px 0;
+}
+
+.growInfo__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 20rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 1.5rem -1rem rgba(0, 0, 0, 0.325);
+    border-radius: .4rem;
+}
+
+.growInfo__card:nth-child(3){
+    box-shadow: 0 0 1.5rem -1rem rgba(0, 0, 0, 0.391);
+}
+
+.growInfo__card::before{
+    content: '';
+    background-color: lightgray;
+    height: 60px;
+    width: 10px;
+    top: -15px;
+    right: 10px;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.growInfo__card:nth-child(1)::before{
+    background-color: brown;
+}
+
+.growInfo__card:nth-child(2)::before{
+    background-color: gold;    
+}
+
+.growInfo__card:nth-child(3)::before{
+    background-color: silver;    
+}
+
+
+.growInfo__title{
+    color: lightgrey;
+    text-align: center;
+}
+
+.growInfo__paragraph{
+    color: black;
+    line-height: 1.6;
+}
+
+.products{
+    padding: 5rem 2rem;
+    padding-top: 0rem;
+}
+
+.title__products{
+    flex-basis: 100%;
+    margin: 150px 0;
+    margin-bottom: 50px;
+}
+
+.title__products--id{
+    margin-top: 50px;
+}
+
+.wrapper__products{
+    padding: 0 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    overflow: scroll;
+    justify-items: center;
+}
+
+.card__price--old{
+    display: flex;
+    justify-content: center;
+    gap: .3rem;
+}
+
+.oldPrice{
+    transform: scale(.8);
+    transform-origin: left;
+    text-decoration: line-through;
+}
+
+.card__products{
+    width: 13rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.325);
+}
+
+
+
+.card__title{
+    color: rgb(211, 211, 211);
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.card__img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.card__paragraph{
+    color: lightgray;
+    display: none;
+    text-align: justify;
+    padding: 1rem 0;
+    font-size: .9rem;
+}
+
+.btn--product{
+    padding: .5rem 0;
+    margin-top: .5rem;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+
+.newslleter{
+    background: #202020;
+    height: 50vh;
+    color: white;
+}
+
+
+.form__newslleter{
+    width: 95%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1rem 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.group__inps{
+    width: 100%;
+    position: relative;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius:  .3rem;
+    /* overflow: hidden; */
+}
+
+.email--inpt{
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius:  .3rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 1.07rem .5rem;
+}
+
+
+.email--label{
+    position: absolute;
+    left: 0;
+    line-height: 3.1;
+    padding-left: .7rem;
+    color: #202020;
+    transition: transform .6s ease;
+}
+
+.email--inpt:not(:placeholder-shown) + .email--label,
+.email--inpt:focus + .email--label{
+    line-height: 1.4;
+    transform: translatey(-100%) scale(.9);
+    transform-origin: left;
+    color: white;
+}
+
+
+.btn--newsllater{
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius:  .3rem;
+    padding: 1.1rem 1rem; 
+    background-color: transparent;
+    color: white;
+    border: .1rem solid white;
+    overflow: hidden;
+}
+
+
+.btn--newsllater:hover{
+    background-color: #202020;
+    color: white;
+    cursor: pointer;
+}
+
+
+.btn--newsllater i{
+    transform: rotate(10deg);
+    transition: transform .3s ease;
+}
+
+.btn--newsllater i:hover{
+    transform: rotate(-10deg);
+}
+
+
+
+
+
+
+
+
+footer{
+    background-color: #202020;
+    color: lightgrey;
+}
+
+.enlaces{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    padding: 2rem;
+}
+
+.btn__contact i{
+    font-size: 1.3rem;
+    color: white;
+}
+
+@media (min-width:1024px) {
+    .navbar{
+        padding: 1.5rem 2rem;
+    }
+
+    .navbar__menu{
+        display: none;
+    }
+
+    .nabvar__items{
+        position: initial;
+        inset: none;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1rem;
+        padding-left: 0;
+        transform: translate(0);
+    }
+
+    .nav__links{
+        color: black;
+        font-size: 1rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .navbar__logo{
+        grid-column: 1/2;
+    }
+
+    .navbar__form{
+        grid-column: 3/4;
+    }
+
+    .intp-search{
+        width: max-content;
+        padding: .0rem .0rem;
+        margin-left: 5rem;
+        font-family: inherit;
+        font-size: inherit;
+        border: none;
+        border-bottom: .1rem solid;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .btns{
+        grid-column: 5/6;
+
+    }
+
+
+    .card__paragraph{
+        display: initial;
+        text-align: left;
+        padding: .5rem 0;
+    }
+
+    .subNavbar__items{
+        overflow-x: initial;
+    }
+
+    .growInfo{
+        justify-content: space-around;
+    }
+}
