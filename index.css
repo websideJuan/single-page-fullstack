@@ -312,10 +312,6 @@ ul.showMenuTransform{
     border-radius: .4rem;
 }
 
-.growInfo__card:nth-child(3){
-    box-shadow: 0 0 1.5rem -1rem rgba(0, 0, 0, 0.391);
-}
-
 .growInfo__card::before{
     content: '';
     background-color: lightgray;
@@ -356,7 +352,6 @@ ul.showMenuTransform{
 }
 
 .title__products{
-    flex-basis: 100%;
     margin: 150px 0;
     margin-bottom: 50px;
 }
@@ -371,7 +366,7 @@ ul.showMenuTransform{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
-    overflow: scroll;
+    overflow-y: scroll;
     justify-items: center;
 }
 
