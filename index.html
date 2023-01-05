@@ -24,75 +24,116 @@
 </head>
 <body>
     <header>
-        <!-- <div class="container"> -->
-            <nav class="navbar">
+        
+        <nav class="navbar">
 
-                <a href="#" class="navbar__logo"><p>FARMSHOP!</p></a>
+            <a href="#" class="navbar__logo"><p>FARMSHOP!</p></a>
 
-                <form class="navbar__form">
+            <form class="navbar__form">
 
+                <div class="navbar__group">
                     <input 
                         type="search"
                         name="search"
                         class="intp-search" 
                         placeholder="Todos los Productos"
                     >
-
-                </form>
-                
-                <ul class="nabvar__items">
-                    <li>
-                        <a href="#" class="nav__links">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__links">Productos</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__links">Nustras actividades</a>
-                    </li>
-                </ul>
-
-                <div class="navbar__menu">
-                    <button
-                        class="btn btn--menu"
-                    >
-                        <i class="fa-solid fa-bars" id="toggleMenuShow"></i>
-                    </button>
-
-                </div>
-
-                <div class="btns">
-                    <a href="#">login</a>
                     
-                    <div class="user d-none">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-
-                    <button
-                        class="btn btn--header"
-                    >
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
+                    <i class="fa-solid fa-magnifying-glass intp-label"></i>
+                    
                 </div>
+
+            </form>
+            
+            <ul class="nabvar__items">
+                <li>
+                    <a href="#" class="nav__links">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__links">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__links">Productos</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__links">actividades</a>
+                </li>
+            </ul>
+
+            <div class="navbar__menu">
+                <button
+                    class="btn btn--menu"
+                >
+                    <i class="fa-solid fa-bars" id="toggleMenuShow"></i>
+                </button>
+
+            </div>
+
+            <div class="btns">
+                <a href="#">login</a>
                 
-            </nav>
-        <!-- </div> -->
+                <div class="user d-none">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <button
+                    class="btn btn--header"
+                >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+            
+        </nav>
+       
     </header>
     <main class="hero">
+        <section class="hero-front">
+            <picture class="container__imgHero">
+                <source media="max-width: 768px" srcset="./assets/hd-wallpaper-g40ae1b32f_640.jpg">
+                <img src="./assets/hd-wallpaper-g60ad008bd_1280.jpg" width="100%" height="100%" alt="check">
+            </picture>
+
+            <div class="hero__content">
+                <h1 class="hero__title">Nuestra mision GrowShop</h1>
+                <p class="hero__paragraph">Acabar con los estereotipos sociales mediebales 😑</p>
+                <a href="#" class="cta cta--hero" data-ctaHero="true">Aprende Mas!</a>
+            </div>
+        </section>
         <div class="container">
 
-            <section class="hero-front">
-                <picture class="container__imgHero">
-                    <source media="max-width: 768px" srcset="./assets/hd-wallpaper-g40ae1b32f_640.jpg">
-                    <img src="./assets/hd-wallpaper-g60ad008bd_1280.jpg" width="100%" height="100%" alt="check">
-                </picture>
-    
-                <div class="hero__content">
-                    <h1 class="hero__title">Nuestra mision GrowShop</h1>
-                    <p class="hero__paragraph">Acabar con los estereotipos sociales mediebales 😑</p>
-                    <a href="#" class="cta cta--hero">Aprende Mas!</a>
+            <div class="pop-up">
+                <div class="pop__up">
+                    <a href="#" class="cta cta--close">
+                        <i class="fa-solid fa-xmark fa-xl" style="color: black;" data-closePopup="close"></i>
+                    </a>
+
+                    <h5 class="pop__up-title">
+                        Bienvenido!
+                    </h5>
+                    <p class="pop__up-paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Recusandae odit ducimus eius alias expedita tempora consectetur 
+                        natus voluptas impedit doloribu
+                    </p>
+
+                    <p class="pop__up-paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Recusandae odit ducimus eius alias expedita tempora consectetur 
+                        natus voluptas impedit doloribus possimus voluptates ipsa suscipit autem,
+                        blanditiis consequatur, animi modi fugit!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Recusandae odit ducimus eius alias expedita tempora consectetur 
+                        natus voluptas impedit doloribus possimus voluptates ipsa suscipit autem,
+                        blanditiis consequatur, animi modi fugit!
+                    </p>
+
+                    <p class="pop__up-paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Recusandae odit ducimus eius alias expedita tempora consectetur 
+                        natus voluptas impedit doloribus possimus voluptates ipsa suscipit autem,
+                        blanditiis,
+                    </p>
                 </div>
-            </section>
+            </div>
 
             <section class="subNavbar">
                 <ul class="subNavbar__items">
@@ -135,12 +176,16 @@
             </section>
 
             <section class="growInfo">
+
+                <h2 class="title__products title__products--growInfo">Kits farm GrowShop</h2>
             
                 <div class="growInfo__card">
                     <h2 class="growInfo__title">titulo card 1</h2>
                     
                     <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione ut dicta consequatur reiciendis earum totam unde commodi neque quia ad eius? Laudantium, facilis! Facere.</p>
                 </div>
+
+                
                 
                 <div class="growInfo__card">
                     <h2 class="growInfo__title">titulo card 2</h2>
@@ -157,74 +202,57 @@
             </section>
 
             <section class="products">
-                <h2 class="title__products title__products--id">Productos Destacados</h2>
 
+                <h2 class="title__products title__products--id">Productos Destacados</h2>
                 <div class="wrapper__products" id="wrapper__destacados"></div>
 
-
-                <h2 class="title__products">Productos Oferta</h2>
-
-
-
-                <div class="wrapper__products" id="wrapper__oferta">
-                    
-                    
-<!-- 
-                    <article class="card__products">
-                        <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
-                        <h5 class="card__title">Name</h5>
-                        <p class="card__paragraph">descripcion del producto no mas de 7 p</p>
-
-                        <button
-                            class="btn btn--product"
-                        >
-                            add to car
-                        </button>
-
-                    </article>
-
-                    <article class="card__products">
-                        <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
-                        <h5 class="card__title">Name</h5>
-                        <p class="card__paragraph">descripcion del producto no mas de 7 p</p>
-
-                        <button
-                            class="btn btn--product"
-                        >
-                            add to car
-                        </button>
-
-                    </article>
-
-                    <article class="card__products">
-                        <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
-                        <h5 class="card__title">Name</h5>
-                        <p class="card__paragraph">descripcion del producto no mas de 7 p</p>
-
-                        <button
-                            class="btn btn--product"
-                        >
-                            add to car
-                        </button>
-
-                    </article>
-
-                    <article class="card__products">
-                        <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
-                        <h5 class="card__title">Name</h5>
-                        <p class="card__paragraph">descripcion del producto no mas de 7 p</p>
-
-                        <button
-                            class="btn btn--product"
-                        >
-                            add to car
-                        </button>
-
-                    </article> -->
-
+                <div class="paginacion__product">
+                    <button
+                        class="btn"
+                    >
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                    </button>
+                    <div class="paginacion__actual">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </div>
+                    <button
+                        class="btn"
+                    >
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </button>
                 </div>
 
-                
+                <h2 class="title__products">Productos Oferta</h2>
+                <div class="wrapper__products" id="wrapper__oferta"></div>
+
+                <div class="paginacion__product">
+                    <button
+                        class="btn"
+                    >
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                    </button>
+                    <div class="paginacion__actual">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </div>
+                    <button
+                        class="btn"
+                    >
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </button>
+                </div>
+
+
+                <div class="cart">
+                    
+                </div>
             </section>
         </div>
     </main>
@@ -233,7 +261,7 @@
         <form class="form__newslleter">
             <div class="group__inps">
                 <input type="email" name="emailInpt" class="email--inpt" placeholder=" ">
-                <label class="email--label">Suscribete a nuestro voletin!</label>
+                <label class="email--label">Suscribete a nuestro voletin:</label>
             </div>
 
             <button 
@@ -274,18 +302,21 @@
                     <div class="btn__contact">
                         <button class="btn">
                             <i class="fa-brands fa-facebook fa-l"></i>
+                    
                         </button>
                     </div>
 
                     <div class="btn__contact">
                         <button class="btn">
                             <i class="fa-brands fa-whatsapp fa-l"></i>
+                    
                         </button>
                     </div>
 
                     <div class="btn__contact">
                         <button class="btn">
                             <i class="fa-brands fa-instagram fa-l"></i>
+                    
                         </button>
                     </div>
                 </div>
@@ -305,9 +336,20 @@
 
 
 
+    <!--template para los Productos-->
 
     <template id="template__card__destacados">
         <article class="card__products">
+            <div class="card__header">
+                <a href="#" class="cta cta__card cta__card--show">
+                    <i class="fa-solid fa-eye"></i>
+                </a>
+            
+
+                <a href="#" class="cta cta__card cta__card--heart">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+            </div>
             <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
             <h5 class="card__title">Name</h5>
 
@@ -326,6 +368,16 @@
 
     <template id="template__card__oferta">
         <article class="card__products">
+            <div class="card__header">
+                <a href="#" class="cta cta__card cta__card--show">
+                    <i class="fa-solid fa-eye"></i>
+                </a>
+            
+
+                <a href="#" class="cta cta__card cta__card--heart">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+            </div>
             <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
             <h5 class="card__title">Name</h5>
 
@@ -341,6 +393,7 @@
 
         </article>
     </template>
+
     <script src="./app.js" ></script>
 </body>
 </html>

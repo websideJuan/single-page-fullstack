@@ -39,7 +39,7 @@
         {
             "title":"Papelillos Rolling",
             "price": 1850,
-            "productId": 1,
+            "productId": 2,
             "count":1,
             "img":"./assets/apple-1282241_640.jpg",
             "id": 5,
@@ -75,7 +75,7 @@
         {
             "title":"Pipa sh Retro",
             "price": 3150,
-            "productId": 2,
+            "productId": 3,
             "count":1,
             "img":"./assets/apple-1282241_640.jpg",
             "id": 9,
@@ -84,7 +84,7 @@
         {
             "title":"Bong Percolador",
             "price": 10450,
-            "productId": 2,
+            "productId": 3,
             "count":1,
             "img":"./assets/apple-1282241_640.jpg",
             "id": 10,
@@ -140,7 +140,7 @@
             "id": 5,
             "count":1,
             "img":"./assets/apple-1282241_640.jpg",
-            "productId": 1,
+            "productId": 2,
             "description":"Contrary to popular belief, Lorem Ipsum is not"
         },
         {
@@ -180,7 +180,7 @@
             "id": 9,
             "count":1,
             "img":"./assets/apple-1282241_640.jpg",
-            "productId": 2,
+            "productId": 3,
             "description":"Contrary to popular belief, Lorem Ipsum is not"
         },
         {
@@ -190,8 +190,22 @@
             "id": 10,
             "count":1,
             "img":"./assets/apple-1282241_640.jpg",
-            "productId": 2,
+            "productId": 3,
             "description":"Contrary to popular belief, Lorem Ipsum is not"
+        }
+    ],
+    "cardsBody":[
+        {
+            "titleCard":"Titulo 1",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione ut dicta consequatur reiciendis earum totam unde commodi neque quia ad eius? Laudantium, facilis! Facere."
+        },
+        {
+            "titleCard":"Titulo 1",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione ut dicta consequatur reiciendis earum totam unde commodi neque quia ad eius? Laudantium, facilis! Facere."
+        },
+        {
+            "titleCard":"Titulo 1",
+            "paragraph":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione ut dicta consequatur reiciendis earum totam unde commodi neque quia ad eius? Laudantium, facilis! Facere."
         }
     ]
 }

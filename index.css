@@ -1,3 +1,6 @@
+@import url(./assets/css/pop.up.css);
+
+
 *,::after,::before{
     box-sizing: border-box;
     margin: 0;
@@ -57,7 +60,6 @@ p,span,b,label{
 }
 
 header{
-
     border-bottom: .1rem solid lightgray;
     margin-bottom: .5rem;
 }
@@ -125,18 +127,30 @@ ul.showMenuTransform{
 
 .navbar__form{
     grid-column: 1/6;
-    width: 100%;
 }
 
-.intp-search{
-    width: 100%;
-    padding: .6rem .0rem;
+.navbar__group{
+    width: min-content;
+    display: flex;
+    align-items: center;
+    border-bottom: .1rem solid lightgray;
+}
+
+input.intp-search{
+    padding: .0rem;
     font-family: inherit;
     font-size: inherit;
     border: none;
-    border-bottom: .1rem solid lightgray;
     outline: none;
     background-color: transparent;
+}
+
+.intp-label{
+    color: lightgray;
+}
+
+.intp-search:focus + .intp-label{
+    color: #202020;
 }
 
 .navbar__menu{
@@ -183,11 +197,12 @@ ul.showMenuTransform{
 .hero-front{
     position: relative;
     height: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .container__imgHero{
     position: absolute;
+    width: 100%;
     height: 100%;
     z-index: 2;
 }
@@ -199,11 +214,12 @@ ul.showMenuTransform{
     align-items: center;
     position: relative;
     z-index: 2;
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.325));
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.326), rgba(0, 0, 0, 0.573));
     color: white;
-    height: 100vh;
+    height: 90vh;
+    width: 100%;
     text-align: center;
-    gap: 1rem;
+    gap: 1.6rem;
     padding: 0rem 1rem;
 }
 
@@ -218,16 +234,13 @@ ul.showMenuTransform{
     justify-content: space-between;
     gap: 3px;
     padding: 0rem .5rem;
-    border: .1rem solid lightgray;
-    border-top: none;
-    border-radius: .4rem;
+    border-bottom: .1rem solid lightgray;
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
 }
 
 .subNavbar__item{
-    padding: .5rem 1.5rem;
-    font-size: 1.9rem;
+    padding: 1.5rem;
     transition: box-shadow .5s ease, background-color .4s;
     display: flex;
     gap: .5rem 0;
@@ -235,6 +248,16 @@ ul.showMenuTransform{
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.subNavbar__item i{
+    font-size: 1.2rem;
+    color: lightgray;
+}
+
+.subNavbar__item p{
+    font-size: 1rem;
+    color: lightgray;
 }
 
 .subNavbar__dropdwn{
@@ -279,15 +302,6 @@ ul.showMenuTransform{
     background-color: rgba(211, 211, 211, 0.589);
 }
 
-.subNavbar__item i{
-    font-size: 1.3rem;
-    color: lightgray;
-}
-
-.subNavbar__item p{
-    font-size: .8rem;
-}
-
 .growInfo{
     display: flex;
     flex-wrap: wrap;
@@ -297,6 +311,11 @@ ul.showMenuTransform{
     padding: 50px 0;
 }
 
+.title__products--growInfo{
+    flex-basis: 100%;
+    margin: 10px 0 !important;
+}
+
 .growInfo__card{
     display: flex;
     flex-direction: column;
@@ -304,11 +323,11 @@ ul.showMenuTransform{
     gap: 2rem;
     padding: 1rem;
     width: 100%;
-    max-width: 20rem;
+    max-width: 17rem;
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 1.5rem -1rem rgba(0, 0, 0, 0.325);
+    box-shadow: 0 0 3rem -2rem rgba(0, 0, 0, 0.325);
     border-radius: .4rem;
 }
 
@@ -351,8 +370,12 @@ ul.showMenuTransform{
     padding-top: 0rem;
 }
 
+.card__price{
+    text-align: center;
+}
+
 .title__products{
-    margin: 150px 0;
+    margin: 50px 0;
     margin-bottom: 50px;
 }
 
@@ -368,6 +391,9 @@ ul.showMenuTransform{
     gap: 2rem;
     overflow-y: scroll;
     justify-items: center;
+    border: .1rem solid lightgray;
+    border-left: none;
+    border-right: none;
 }
 
 .card__price--old{
@@ -383,15 +409,35 @@ ul.showMenuTransform{
 }
 
 .card__products{
+    overflow: hidden;
+    position: relative;
     width: 13rem;
     padding: .5rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
     box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.325);
+    border-radius: .2rem;
+    transition: box-shadow .3s;
 }
 
+.card__products:hover{
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, .1);
 
+}
+
+.paginacion__product{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.paginacion__product ul{
+    display: flex;
+    gap: 1rem;
+}
 
 .card__title{
     color: rgb(211, 211, 211);
@@ -419,6 +465,40 @@ ul.showMenuTransform{
     cursor: pointer;
 }
 
+.card__header{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 0; left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.116), rgba(0, 0, 0, 0.3));
+    padding: .5rem;
+    transform: translatey(-130%);
+    transition: transform .6s;
+}
+
+.card__products:hover .card__header{
+    transform: translate(0);
+}
+
+.cta__card{
+    width: fit-content;
+    border-radius: 50%;
+    padding: .1rem .4rem;
+    line-height: 1.7;
+    transform: scale(.9);
+}
+
+.cta--cardBTN i{
+    color: lightgrey;
+}
+
+.card__products:hover .cta--cardBTN{
+    height: max-content;
+    transform: translate(0);
+}
 
 .newslleter{
     background: #202020;
@@ -440,10 +520,12 @@ ul.showMenuTransform{
 
 .group__inps{
     width: 100%;
+    height: 50px;
     position: relative;
     border-top-right-radius: .3rem;
     border-bottom-right-radius:  .3rem;
-    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
 }
 
 .email--inpt{
@@ -454,7 +536,7 @@ ul.showMenuTransform{
     border: none;
     font-size: inherit;
     font-family: inherit;
-    padding: 1.07rem .5rem;
+    padding: 1.1rem .5rem;
 }
 
 
@@ -470,7 +552,7 @@ ul.showMenuTransform{
 .email--inpt:not(:placeholder-shown) + .email--label,
 .email--inpt:focus + .email--label{
     line-height: 1.4;
-    transform: translatey(-100%) scale(.9);
+    transform: translatey(-200%) scale(.9);
     transform-origin: left;
     color: white;
 }
@@ -506,10 +588,6 @@ ul.showMenuTransform{
 
 
 
-
-
-
-
 footer{
     background-color: #202020;
     color: lightgrey;
@@ -531,7 +609,18 @@ footer{
 
 @media (min-width:1024px) {
     .navbar{
-        padding: 1.5rem 2rem;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 1.5rem 5rem;
+        width: 100%;
+        z-index: 4;
+        /* border-bottom: .1rem solid lightgray; */
+        background: white;
+    }
+
+    .hero-front{
+        margin-top: 4rem;
     }
 
     .navbar__menu{
@@ -570,7 +659,6 @@ footer{
     .intp-search{
         width: max-content;
         padding: .0rem .0rem;
-        margin-left: 5rem;
         font-family: inherit;
         font-size: inherit;
         border: none;
@@ -584,6 +672,11 @@ footer{
 
     }
 
+    .wrapper__products{
+        padding: 1rem 0;
+        padding-left: .3rem;
+        overflow: initial;
+    }
 
     .card__paragraph{
         display: initial;
@@ -597,5 +690,9 @@ footer{
 
     .growInfo{
         justify-content: space-around;
+    }
+
+    .paginacion__product{
+        display: flex;
     }
 }
