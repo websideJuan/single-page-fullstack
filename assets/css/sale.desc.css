@@ -1,0 +1,41 @@
+.bannerIMG__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1rem;
+    margin: 50px 0;
+    height: 50vh;
+}
+
+.banner__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: lightgray;
+    height: 70%;
+    overflow: hidden;
+}
+
+.img__banner{
+    filter: drop-shadow(0 0 200px  rgb(255, 217, 0));
+}
+
+.banner__img::after{
+    content: 'Descuentos';
+    color: lightgray;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    padding: .5rem;
+    font-weight: bold;
+    background-color: white;
+    z-index: 3;
+    font-size: 2rem;
+    transform: rotate(-45deg);
+    text-align: center;
+}
+
+.img__banner{
+    width: 70%;
+    height: 80%;
+}

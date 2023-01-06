@@ -45,10 +45,8 @@ const procecandoDatosdelCarito = (e) => {
 
 
         if(Array.isArray(cartShopItems) && cartShopItems.length === 0){
-            if(cartShopItems[objFrom.count] === 1 ){
-                cartShopItems.push(objFrom)
-
-            }
+           
+            cartShopItems.push(objFrom)
         }
 
         cartShopItems.forEach(itemCart => {
