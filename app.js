@@ -1,3 +1,5 @@
+import componentDataBody from "./components/hero.js"
+
 //Memory Fragment
 const fragment = document.createDocumentFragment()
 
@@ -12,20 +14,45 @@ const wrapper_oferta = document.getElementById('wrapper__oferta');
 const template__card__oferta = document.getElementById('template__card__oferta').content;
 
 
+//SliderShow 
+const sliders = [...document.querySelectorAll('.hero-front')]
+const btnBefore = document.querySelector('#before')
+const btnNext = document.querySelector('#next')
+
+
+console.log(sliders)
+let value
+
 const pintandoCart = document.querySelector('.cart')
 
-document.addEventListener('click', e => {
 
+btnBefore.addEventListener('click', ()=>showSlider(-1))
+btnNext.addEventListener('click', ()=>showSlider(1))
+
+
+const showSlider = (n) => {
+
+    const currentElement = Number(document.querySelector('.hero-front--show').dataset.id)
+
+    value = currentElement
+    value += n
+
+    if(value === 0 || value == sliders.length +1){
+        value = value === 0 ? sliders.length : 1
+    }
+
+    console.log(sliders[value])
+
+    sliders[currentElement -1].classList.toggle('hero-front--show')
+    sliders[value -1].classList.toggle('hero-front--show')
+}
+
+document.addEventListener('click', e => {
+    procecandoDatosdelCarito(e)
+    showPopUp(e)
     e.stopPropagation()
 
-    
- 
-    procecandoDatosdelCarito(e)
-
-    showPopUp(e)
-
 })
-
 
 const procecandoDatosdelCarito = (e) => {
     
@@ -75,17 +102,45 @@ const showPopUp = ({target:{dataset:{ctahero, closepopup}}}) => {
     }
 }
 
+window.addEventListener('scroll', () => {
+    let positionDiv = document.querySelector('#positionDiv')
+    let navbar = document.querySelector('.navbar')
+    let positionDivDOM = positionDiv.getBoundingClientRect().top
+    let altoDePantalla = window.innerHeight / 3;
 
+    if(positionDivDOM < altoDePantalla){
+        navbar.classList.add('navbar--show')
+    }else{
+        navbar.classList.remove('navbar--show')
+    }
 
+    let animation__cardAll = document.querySelectorAll('.animation__card')
 
+    const nodelistToArray = Array.apply(null, animation__cardAll);
 
+    nodelistToArray.forEach(card => {
+        let positionElement = card.getBoundingClientRect().top
+
+        if(positionElement < altoDePantalla) {
+            card.children[0].querySelector('img').style.opacity = '1'
+        }else{
+            card.children[0].querySelector('img').style.opacity = '0'
+
+        }
+    })
+    
+})
 
 window.addEventListener("DOMContentLoaded", async () => {
+    
     const resultData = await fetchDataProduct()
 
     dataProductDestacado(resultData)
 
     dataProductOfertas(resultData)
+
+    componentDataBody()
+
 })
 
 const dataProductOfertas = ({productosOferta}) => {
@@ -108,7 +163,11 @@ const dataProductOfertas = ({productosOferta}) => {
     })
 
     wrapper_oferta.appendChild(fragment)
+
+
+
 }
+
 
 const dataProductDestacado = ({productosDestacados}) => {
     let numberIdDestacados = 1
@@ -136,8 +195,6 @@ async function fetchDataProduct() {
     .then(res => res.json())
     .catch(error => console.log(error))
 }
-
-
 
 toggleMenuShow.addEventListener('click', e => {
     if(nabvar__items){

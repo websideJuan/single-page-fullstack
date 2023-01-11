@@ -23,6 +23,10 @@
 
 </head>
 <body>
+    
+    <div class="positionDiv" id="positionDiv"></div>
+
+    
     <header>
         
         <nav class="navbar">
@@ -70,7 +74,7 @@
             </div>
 
             <div class="btns">
-                <a href="#">login</a>
+                <a href="#" class="cta cta--login">login</a>
                 
                 <div class="user d-none">
                     <i class="fa-solid fa-user"></i>
@@ -87,18 +91,54 @@
        
     </header>
     <main class="hero">
-        <section class="hero-front">
-            <picture class="container__imgHero">
-                <source media="max-width: 768px" srcset="./assets/hd-wallpaper-g40ae1b32f_640.jpg">
-                <img src="./assets/hd-wallpaper-g60ad008bd_1280.jpg" width="100%" height="100%" alt="check">
-            </picture>
 
-            <div class="hero__content">
-                <h1 class="hero__title">Nuestra mision GrowShop</h1>
-                <p class="hero__paragraph">Acabar con los estereotipos sociales mediebales 😑</p>
-                <a href="#" class="cta cta--hero" data-ctaHero="true">Aprende Mas!</a>
-            </div>
+        <div class="container__gridHero" id="bodyHero">
+            <section class="panel__controlHero">
+                <i class="fa-solid fa-arrow-left fa-xl panel__controlHero-before" id="before"></i>
+                <i class="fa-solid fa-arrow-right fa-xl panel__controlHero-next" id="next"></i>
+            </section>
+        </div>
+
+        <section class="subNavbar">
+            <ul class="subNavbar__items">
+                <li class="subNavbar__item subNavbar__item--drop">
+                    <i class="fa-solid fa-bars"></i>
+                    <div class="subNavbar__dropdwn">
+                        <ul class="dropdwn__items">
+                            <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
+                            <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
+                            <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
+                            <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="subNavbar__item">
+                    <i class="fa-solid fa-smoking"></i>
+                    <p>Smoking</p>
+                </li>
+                <li class="subNavbar__item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Localizacion</p>
+                </li>
+                <li class="subNavbar__item">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p>Envios!</p>
+                </li>
+                <li class="subNavbar__item">
+                    <i class="fa-solid fa-tablet-button"></i>
+                    <p>Abonos</p>
+                </li>
+                <li class="subNavbar__item">
+                    <i class="fa-solid fa-tablet-button"></i>
+                    <p>Indors</p>
+                </li>
+                <li class="subNavbar__item">
+                    <i class="fa-solid fa-tablet-button"></i>
+                    <p>Bongs</p>
+                </li>
+            </ul>
         </section>
+
         <div class="container">
 
             <div class="pop-up">
@@ -125,86 +165,46 @@
                 </div>
             </div>
 
-            <section class="subNavbar">
-                <ul class="subNavbar__items">
-                    <li class="subNavbar__item subNavbar__item--drop">
-                        <i class="fa-solid fa-bars"></i>
-                        <div class="subNavbar__dropdwn">
-                            <ul class="dropdwn__items">
-                                <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
-                                <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
-                                <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
-                                <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="subNavbar__item">
-                        <i class="fa-solid fa-smoking"></i>
-                        <p>Smoking</p>
-                    </li>
-                    <li class="subNavbar__item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Localizacion</p>
-                    </li>
-                    <li class="subNavbar__item">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <p>Envios!</p>
-                    </li>
-                    <li class="subNavbar__item">
-                        <i class="fa-solid fa-tablet-button"></i>
-                        <p>Abonos</p>
-                    </li>
-                    <li class="subNavbar__item">
-                        <i class="fa-solid fa-tablet-button"></i>
-                        <p>Indors</p>
-                    </li>
-                    <li class="subNavbar__item">
-                        <i class="fa-solid fa-tablet-button"></i>
-                        <p>Bongs</p>
-                    </li>
-                </ul>
-            </section>
+            
 
             <section class="growInfo">
 
                 <h2 class="title__products title__products--growInfo">Kits farm GrowShop</h2>
             
-                <div class="growInfo__card">
+                <div class="growInfo__card animation__card" >
                     <div class="growInfo__content">
                         <i class="fa-solid fa-cannabis"></i>
-                        <i class="fa-solid fa-cannabis"></i>
+                        <!-- <i class="fa-solid fa-cannabis"></i> -->
                         <img src="./assets/jars-1853439_640.jpg" alt="img card kits" class="growInfo__img">
 
                     </div>
-                    <h2 class="growInfo__title">titulo card 1</h2>
+                    <h2 class="growInfo__title">titulo</h2>
                     
-                    <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione ut dicta consequatur reiciendis earum totam unde commodi neque quia.</p>
+                    <!-- <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione</p> -->
                 </div>
-
                 
-                
-                <div class="growInfo__card">
+                <div class="growInfo__card animation__card" >
                     <div class="growInfo__content">
                         <i class="fa-solid fa-cannabis"></i>
-                        <i class="fa-solid fa-cannabis"></i>
+                        <!-- <i class="fa-solid fa-cannabis"></i> -->
                         <img src="./assets/jars-1853439_640.jpg" alt="img card kits" class="growInfo__img">
 
                     </div>
-                    <h2 class="growInfo__title">titulo card 2</h2>
+                    <h2 class="growInfo__title">titulo</h2>
                     
-                    <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione ut dicta consequatur reiciendis earum totam unde commodi neque quia.</p>
+                    <!-- <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione</p> -->
                 </div>
                     
-                <div class="growInfo__card">
+                <div class="growInfo__card animation__card">
                     <div class="growInfo__content">
                         <i class="fa-solid fa-cannabis"></i>
-                        <i class="fa-solid fa-cannabis"></i>
+                        <!-- <i class="fa-solid fa-cannabis"></i> -->
                         <img src="./assets/jars-1853439_640.jpg" alt="img card kits" class="growInfo__img">
 
                     </div>
-                    <h2 class="growInfo__title">titulo card 3</h2>
+                    <h2 class="growInfo__title">titulo</h2>
                     
-                    <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione ut dicta consequatur reiciendis earum totam unde commodi neque quia.</p>
+                    <!-- <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione</p> -->
                 </div>
                 
             </section>
@@ -352,9 +352,7 @@
 
     </footer>
 
-
-
-
+    
 
     <!--template para los Productos-->
 
@@ -414,6 +412,22 @@
         </article>
     </template>
 
-    <script src="./app.js" ></script>
+    <!--template para body Hero-->
+    <template id="template-hero">
+        <section class="hero-front hero-front--show" data-id="1">
+            <picture class="container__imgHero">
+                <source media="max-width: 768px" srcset="./assets/hd-wallpaper-g40ae1b32f_640.jpg">
+                <img src="./assets/hd-wallpaper-g60ad008bd_1280.jpg" width="100%" height="100%" alt="check" class="img__hero">
+            </picture>
+
+            <div class="hero__content">
+                <h1 class="hero__title">Nuestra mision GrowShop</h1>
+                <p class="hero__paragraph">Acabar con los estereotipos sociales mediebales 😑</p>
+                <a href="#" class="cta cta--hero" data-ctaHero="true">Aprende Mas!</a>
+            </div>
+        </section>
+    </template>
+
+    <script src="./app.js" type="module"></script>
 </body>
 </html>

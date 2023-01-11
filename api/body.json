@@ -1,0 +1,43 @@
+{
+    "dataBody":[
+        {
+            "classShowCards":"hero-front hero-front--show",
+            "title":"Nuestra mision GrowShop",
+            "img":"../assets/hd-wallpaper-g60ad008bd_1280.jpg",
+            "paragraph":"Acabar con los estereotipos sociales mediebales 😑",
+            "validation":true,
+            "id":1,
+            "ctaBTN":{
+                "text":"Aprende Mas!",
+                "class":"cta cta--hero",
+                "dataSet":"true"
+            }
+        },
+        {
+            "classShowCards":"hero-front",
+            "title":"Hola Mariwuanero",
+            "img":"../assets/matthew-sichkaruk-TjrhGEgyqlQ-unsplash.jpg",
+            "paragraph":"Como te gustaria que fuera el consumo consiente 🤔",
+            "validation":true,
+            "id":2,
+            "ctaBTN":{
+                "text":"Cuentanos!",
+                "class":"cta cta--hero",
+                "dataSet":"formAction"
+            }
+        },
+        {
+            "classShowCards":"hero-front",
+            "title":"El uso recreativo del cannabis en Colombia",
+            "img":"../assets/jorge-gardner-5DqvsOPKdlk-unsplash.jpg",
+            "paragraph":"La comisión primera del Senado de Colombia aprobó un proyecto que busca modificar la Constitución para regularizar el uso recreativo del cannabis📲",
+            "validation":true,
+            "id":3,
+            "ctaBTN":{
+                "text":"Leer Mas!",
+                "class":"cta cta--hero",
+                "dataSet":"formAction"
+            }
+        }
+    ]
+}
