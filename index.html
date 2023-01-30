@@ -1,433 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-comercer</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-comercer</title>
 
-    <!--Global icons font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Global css ⬇️-->
-    <link rel="stylesheet" href="index.css">
+        <!--Global icons font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Global css ⬇️-->
+        <link rel="stylesheet" href="index.css">
 
-    <!--Google font ⬇️-->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&family=Rubik:wght@600&display=swap" rel="stylesheet"> -->
+        <!--Google font ⬇️-->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&family=Rubik:wght@600&display=swap" rel="stylesheet"> -->
 
-    <!--Google font ⬇️-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+        <!--Google font ⬇️-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Quattrocento:wght@700&display=swap" rel="stylesheet">
 
-</head>
-<body>
-    
-    <div class="positionDiv" id="positionDiv"></div>
+    </head>
+    <body>
+        <div class="positionDiv" id="positionDiv"></div>        
+        <header>
+            <nav class="navbar">
 
-    
-    <header>
+                <a href="#" class="navbar__logo"><p>FARMSHOP!</p></a>
+
+                <form class="navbar__form">
+
+                    <div class="navbar__group">
+                        <input 
+                            type="search"
+                            name="search"
+                            class="intp-search" 
+                            placeholder="Todos los Productos"
+                        >
+                        
+                        <i class="fa-solid fa-magnifying-glass intp-label"></i>
+                        
+                    </div>
+
+                </form>
+                
+                <ul class="nabvar__items">
+                    <li>
+                        <a href="#" class="nav__links">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__links">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__links">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__links">actividades</a>
+                    </li>
+                </ul>
+
+                <div class="navbar__menu">
+                    <button
+                        class="btn btn--menu"
+                    >
+                        <i class="fa-solid fa-bars" id="toggleMenuShow"></i>
+                    </button>
+
+                </div>
+
+                <div class="btns">
+                    <a href="#" class="cta cta--login">login</a>
+                    
+                    <div class="user d-none">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <button
+                        class="btn btn--header"
+                    >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+                
+            </nav>
         
-        <nav class="navbar">
+        </header>
+        <main class="hero">
 
-            <a href="#" class="navbar__logo"><p>FARMSHOP!</p></a>
+            <div class="hero_sildebar">
+                
+            </div>
 
-            <form class="navbar__form">
+            <div class="container__gridHero" id="bodyHero">
+                <section class="panel__controlHero">
+                    <i class="fa-solid fa-arrow-left fa-xl panel__controlHero-before" id="before"></i>
+                    <i class="fa-solid fa-arrow-right fa-xl panel__controlHero-next" id="next"></i>
+                </section>
+            </div>
 
-                <div class="navbar__group">
-                    <input 
-                        type="search"
-                        name="search"
-                        class="intp-search" 
-                        placeholder="Todos los Productos"
-                    >
-                    
-                    <i class="fa-solid fa-magnifying-glass intp-label"></i>
-                    
+            <section class="subNavbar">
+                <ul class="subNavbar__items">
+                    <li class="subNavbar__item subNavbar__item--drop">
+                        <i class="fa-solid fa-bars"></i>
+                        <div class="subNavbar__dropdwn">
+                            <ul class="dropdwn__items">
+                                <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
+                                <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
+                                <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
+                                <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="subNavbar__item">
+                        <i class="fa-solid fa-smoking"></i>
+                        <p>Smoking</p>
+                    </li>
+                    <li class="subNavbar__item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Localizacion</p>
+                    </li>
+                    <li class="subNavbar__item">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <p>Envios!</p>
+                    </li>
+                    <li class="subNavbar__item">
+                        <i class="fa-solid fa-tablet-button"></i>
+                        <p>Abonos</p>
+                    </li>
+                    <li class="subNavbar__item">
+                        <i class="fa-solid fa-tablet-button"></i>
+                        <p>Indors</p>
+                    </li>
+                    <li class="subNavbar__item">
+                        <i class="fa-solid fa-tablet-button"></i>
+                        <p>Bongs</p>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="container">
+
+                <div class="pop-up">
+                    <div class="pop__up">
+                        <a href="#" class="cta cta--close">
+                            <i class="fa-solid fa-xmark fa-xl" style="color: black;" data-closePopup="close"></i>
+                        </a>
+
+                        <h5 class="pop__up-title">
+                            Bienvenido!
+                        </h5>
+
+                        <p class="pop__up-paragraph">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Recusandae odit ducimus eius alias expedita tempora consectetur 
+                            natus voluptas impedit doloribus possimus voluptates ipsa suscipit autem,
+                            blanditiis consequatur, animi modi fugit!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Recusandae odit ducimus eius alias expedita tempora consectetur 
+                            natus voluptas impedit doloribus possimus voluptates ipsa suscipit autem,
+                            blanditiis consequatur, animi modi fugit!
+                        </p>
+
+                        
+                    </div>
                 </div>
 
+                
+
+                <section class="growInfo">
+
+                    <h2 class="title__products title__products--growInfo">Kits farm GrowShop</h2>
+                
+                    <div class="growInfo__card animation__card" >
+                        <div class="growInfo__content">
+                            <i class="fa-solid fa-cannabis"></i>
+                            <!-- <i class="fa-solid fa-cannabis"></i> -->
+                            <img src="./assets/jars-1853439_640.jpg" alt="img card kits" class="growInfo__img">
+
+                        </div>
+                        <h2 class="growInfo__title">titulo</h2>
+                        
+                        <!-- <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione</p> -->
+                    </div>
+                    
+                    <div class="growInfo__card animation__card" >
+                        <div class="growInfo__content">
+                            <i class="fa-solid fa-cannabis"></i>
+                            <!-- <i class="fa-solid fa-cannabis"></i> -->
+                            <img src="./assets/jars-1853439_640.jpg" alt="img card kits" class="growInfo__img">
+
+                        </div>
+                        <h2 class="growInfo__title">titulo</h2>
+                        
+                        <!-- <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione</p> -->
+                    </div>
+                        
+                    <div class="growInfo__card animation__card">
+                        <div class="growInfo__content">
+                            <i class="fa-solid fa-cannabis"></i>
+                            <!-- <i class="fa-solid fa-cannabis"></i> -->
+                            <img src="./assets/jars-1853439_640.jpg" alt="img card kits" class="growInfo__img">
+
+                        </div>
+                        <h2 class="growInfo__title">titulo</h2>
+                        
+                        <!-- <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione</p> -->
+                    </div>
+                    
+                </section>
+
+                <section class="bannerIMG d-none">
+                    <div class="bannerIMG__container">
+                        <div class="banner__img">
+                            <img src="./assets/tag-154930_640.png" alt="" class="img__banner">
+                        </div>
+                        <div class="banner__content">
+                            <h5 class="banner__title">Lorem ipsum dolor sit.</h5>
+                            <p class="banner__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate ipsum. Quisquam pariatur omnis iste ex neque maiores perferendis veritatis dolorum earum, eaque culpa dolores asperiores vero recusandae nisi quis? <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. At perspiciatis sint veritatis temporibus neque molestiae reprehenderit itaque hic dolores, exercitationem facilis explicabo minima quibusdam? Possimus fuga ab fugiat eius? Amet! <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam facere id, placeat cupiditate ratione autem dignissimos deleniti illo voluptatem eos suscipit delectus, quae odio sequi odit, nemo nostrum laboriosam ipsa?</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="products">
+
+                    <h2 class="title__products title__products--id">Productos Destacados</h2>
+                    <div class="wrapper__products" id="wrapper__destacados"></div>
+
+                    <div class="paginacion__product">
+                        <button
+                            class="btn"
+                        >
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                        </button>
+                        <div class="paginacion__actual">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul>
+                        </div>
+                        <button
+                            class="btn"
+                        >
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <h2 class="title__products">Productos Oferta</h2>
+                    <div class="wrapper__products" id="wrapper__oferta"></div>
+
+                    <div class="paginacion__product">
+                        <button
+                            class="btn"
+                        >
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                        </button>
+                        <div class="paginacion__actual">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul>
+                        </div>
+                        <button
+                            class="btn"
+                        >
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="cart">
+                        
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <article class="newslleter">
+            <form class="form__newslleter">
+                <div class="group__inps">
+                    <input type="email" name="emailInpt" class="email--inpt" placeholder=" ">
+                    <label class="email--label">Suscribete a nuestro voletin:</label>
+                </div>
+
+                <button 
+                    type="submit"
+                    class="btn btn--newsllater"    
+                >
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                </button>
             </form>
-            
-            <ul class="nabvar__items">
-                <li>
-                    <a href="#" class="nav__links">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__links">Nosotros</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__links">Productos</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__links">actividades</a>
-                </li>
-            </ul>
+        </article>
 
-            <div class="navbar__menu">
-                <button
-                    class="btn btn--menu"
-                >
-                    <i class="fa-solid fa-bars" id="toggleMenuShow"></i>
-                </button>
+        <footer>
+            <div class="container">
 
-            </div>
+                <div class="enlaces">
+                    <ul>
+                        <li>Sitios sugeridos</li>
+                        <li>Enlaces visitados</li>
+                        <li>ofertas de productos</li>
+                        <li>Informacion general</li>
+                    </ul>
+        
+                    <ul>
+                        <li>Informacion legal</li>
+                        <li>Seguridad de sus compras</li>
+                        <li>Necesitas ayuda?</li>
+                        <li>Politicas de privacidad</li>
+                    </ul>
+        
+                    <ul>
+                        <li>Seguimiento de productos</li>
+                        <li>Continua comprando</li>
+                        <li>simula tu fecha de entrega</li>
+                        <li>Busca retiros serca de ti!</li>
+                    </ul>
 
-            <div class="btns">
-                <a href="#" class="cta cta--login">login</a>
-                
-                <div class="user d-none">
-                    <i class="fa-solid fa-user"></i>
-                </div>
+                    <div class="contact__social">
+                        <div class="btn__contact">
+                            <button class="btn">
+                                <i class="fa-brands fa-facebook fa-l"></i>
+                        
+                            </button>
+                        </div>
 
-                <button
-                    class="btn btn--header"
-                >
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-            </div>
-            
-        </nav>
-       
-    </header>
-    <main class="hero">
+                        <div class="btn__contact">
+                            <button class="btn">
+                                <i class="fa-brands fa-whatsapp fa-l"></i>
+                        
+                            </button>
+                        </div>
 
-        <div class="container__gridHero" id="bodyHero">
-            <section class="panel__controlHero">
-                <i class="fa-solid fa-arrow-left fa-xl panel__controlHero-before" id="before"></i>
-                <i class="fa-solid fa-arrow-right fa-xl panel__controlHero-next" id="next"></i>
-            </section>
-        </div>
-
-        <section class="subNavbar">
-            <ul class="subNavbar__items">
-                <li class="subNavbar__item subNavbar__item--drop">
-                    <i class="fa-solid fa-bars"></i>
-                    <div class="subNavbar__dropdwn">
-                        <ul class="dropdwn__items">
-                            <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
-                            <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
-                            <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
-                            <li class="dropdwn__item"><a href="#" class="dropdwn__link">link</a></li>
-                        </ul>
+                        <div class="btn__contact">
+                            <button class="btn">
+                                <i class="fa-brands fa-instagram fa-l"></i>
+                        
+                            </button>
+                        </div>
                     </div>
-                </li>
-                <li class="subNavbar__item">
-                    <i class="fa-solid fa-smoking"></i>
-                    <p>Smoking</p>
-                </li>
-                <li class="subNavbar__item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Localizacion</p>
-                </li>
-                <li class="subNavbar__item">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <p>Envios!</p>
-                </li>
-                <li class="subNavbar__item">
-                    <i class="fa-solid fa-tablet-button"></i>
-                    <p>Abonos</p>
-                </li>
-                <li class="subNavbar__item">
-                    <i class="fa-solid fa-tablet-button"></i>
-                    <p>Indors</p>
-                </li>
-                <li class="subNavbar__item">
-                    <i class="fa-solid fa-tablet-button"></i>
-                    <p>Bongs</p>
-                </li>
-            </ul>
-        </section>
+        
+                </div>
+        
+                <div class="copy">
+                    <img src="./" alt="">
+                    <h5>Juan Herrera W. <span>Dev. disgn and FullStack dev.</span></h5>
+                    <P>Pagina creada desde 0</P>
+                </div>
+            </div>
 
-        <div class="container">
+        </footer>
 
-            <div class="pop-up">
-                <div class="pop__up">
-                    <a href="#" class="cta cta--close">
-                        <i class="fa-solid fa-xmark fa-xl" style="color: black;" data-closePopup="close"></i>
+        
+
+        <!--template para los Productos-->
+
+        <template id="template__card__destacados">
+            <article class="card__products">
+                <div class="card__header">
+                    <a href="#" class="cta cta__card cta__card--show">
+                        <i class="fa-solid fa-eye"></i>
                     </a>
-
-                    <h5 class="pop__up-title">
-                        Bienvenido!
-                    </h5>
-
-                    <p class="pop__up-paragraph">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Recusandae odit ducimus eius alias expedita tempora consectetur 
-                        natus voluptas impedit doloribus possimus voluptates ipsa suscipit autem,
-                        blanditiis consequatur, animi modi fugit!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Recusandae odit ducimus eius alias expedita tempora consectetur 
-                        natus voluptas impedit doloribus possimus voluptates ipsa suscipit autem,
-                        blanditiis consequatur, animi modi fugit!
-                    </p>
-
-                    
-                </div>
-            </div>
-
-            
-
-            <section class="growInfo">
-
-                <h2 class="title__products title__products--growInfo">Kits farm GrowShop</h2>
-            
-                <div class="growInfo__card animation__card" >
-                    <div class="growInfo__content">
-                        <i class="fa-solid fa-cannabis"></i>
-                        <!-- <i class="fa-solid fa-cannabis"></i> -->
-                        <img src="./assets/jars-1853439_640.jpg" alt="img card kits" class="growInfo__img">
-
-                    </div>
-                    <h2 class="growInfo__title">titulo</h2>
-                    
-                    <!-- <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione</p> -->
-                </div>
                 
-                <div class="growInfo__card animation__card" >
-                    <div class="growInfo__content">
-                        <i class="fa-solid fa-cannabis"></i>
-                        <!-- <i class="fa-solid fa-cannabis"></i> -->
-                        <img src="./assets/jars-1853439_640.jpg" alt="img card kits" class="growInfo__img">
 
-                    </div>
-                    <h2 class="growInfo__title">titulo</h2>
-                    
-                    <!-- <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione</p> -->
+                    <a href="#" class="cta cta__card cta__card--heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
                 </div>
-                    
-                <div class="growInfo__card animation__card">
-                    <div class="growInfo__content">
-                        <i class="fa-solid fa-cannabis"></i>
-                        <!-- <i class="fa-solid fa-cannabis"></i> -->
-                        <img src="./assets/jars-1853439_640.jpg" alt="img card kits" class="growInfo__img">
+                <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
+                <h5 class="card__title">Name</h5>
 
-                    </div>
-                    <h2 class="growInfo__title">titulo</h2>
-                    
-                    <!-- <p class="growInfo__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut quo sunt, repellendus porro ratione</p> -->
-                </div>
+                <p class="card__paragraph">descripcion del producto no mas de 7 p</p>
+
+                <span class="card__price">$<span>3300</span></span>
+
+                <button
+                    class="btn btn--product"
+                >
+                    add to car
+                </button>
+
+            </article>
+        </template>
+
+        <template id="template__card__oferta">
+            <article class="card__products">
+                <div class="card__header">
+                    <a href="#" class="cta cta__card cta__card--show">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
                 
-            </section>
 
-            <section class="bannerIMG d-none">
-                <div class="bannerIMG__container">
-                    <div class="banner__img">
-                        <img src="./assets/tag-154930_640.png" alt="" class="img__banner">
-                    </div>
-                    <div class="banner__content">
-                        <h5 class="banner__title">Lorem ipsum dolor sit.</h5>
-                        <p class="banner__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate ipsum. Quisquam pariatur omnis iste ex neque maiores perferendis veritatis dolorum earum, eaque culpa dolores asperiores vero recusandae nisi quis? <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. At perspiciatis sint veritatis temporibus neque molestiae reprehenderit itaque hic dolores, exercitationem facilis explicabo minima quibusdam? Possimus fuga ab fugiat eius? Amet! <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam facere id, placeat cupiditate ratione autem dignissimos deleniti illo voluptatem eos suscipit delectus, quae odio sequi odit, nemo nostrum laboriosam ipsa?</p>
-                    </div>
+                    <a href="#" class="cta cta__card cta__card--heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
+                </div>
+                <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
+                <h5 class="card__title">Name</h5>
+
+                <p class="card__paragraph">descripcion del producto no mas de 7 p</p>
+
+                <p class="card__price card__price--old">$<span>3300</span>-<span class="oldPrice">5500</span></p>
+
+                <button
+                    class="btn btn--product"
+                >
+                    add to car
+                </button>
+
+            </article>
+        </template>
+
+        <!--template para body Hero-->
+        <template id="template-hero">
+            <section class="hero-front hero-front--show" data-id="1">
+                <picture class="container__imgHero">
+                    <source media="max-width: 768px" srcset="./assets/hd-wallpaper-g40ae1b32f_640.jpg">
+                    <img src="./assets/hd-wallpaper-g60ad008bd_1280.jpg" width="100%" height="100%" alt="check" class="img__hero">
+                </picture>
+
+                <div class="hero__content">
+                    <h1 class="hero__title">Nuestra mision GrowShop</h1>
+                    <p class="hero__paragraph">Acabar con los estereotipos sociales mediebales 😑</p>
+                    <a href="#" class="cta cta--hero" data-ctaHero="true">Aprende Mas!</a>
                 </div>
             </section>
+        </template>
 
-            <section class="products">
-
-                <h2 class="title__products title__products--id">Productos Destacados</h2>
-                <div class="wrapper__products" id="wrapper__destacados"></div>
-
-                <div class="paginacion__product">
-                    <button
-                        class="btn"
-                    >
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                    </button>
-                    <div class="paginacion__actual">
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                    <button
-                        class="btn"
-                    >
-                        <i class="fa-solid fa-circle-arrow-right"></i>
-                    </button>
-                </div>
-
-                <h2 class="title__products">Productos Oferta</h2>
-                <div class="wrapper__products" id="wrapper__oferta"></div>
-
-                <div class="paginacion__product">
-                    <button
-                        class="btn"
-                    >
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                    </button>
-                    <div class="paginacion__actual">
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </div>
-                    <button
-                        class="btn"
-                    >
-                        <i class="fa-solid fa-circle-arrow-right"></i>
-                    </button>
-                </div>
-
-
-                <div class="cart">
-                    
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <article class="newslleter">
-        <form class="form__newslleter">
-            <div class="group__inps">
-                <input type="email" name="emailInpt" class="email--inpt" placeholder=" ">
-                <label class="email--label">Suscribete a nuestro voletin:</label>
-            </div>
-
-            <button 
-                type="submit"
-                class="btn btn--newsllater"    
-            >
-                <i class="fa-solid fa-envelope fa-xl"></i>
-            </button>
-        </form>
-    </article>
-
-    <footer>
-        <div class="container">
-
-            <div class="enlaces">
-                <ul>
-                    <li>Sitios sugeridos</li>
-                    <li>Enlaces visitados</li>
-                    <li>ofertas de productos</li>
-                    <li>Informacion general</li>
-                </ul>
-    
-                <ul>
-                    <li>Informacion legal</li>
-                    <li>Seguridad de sus compras</li>
-                    <li>Necesitas ayuda?</li>
-                    <li>Politicas de privacidad</li>
-                </ul>
-    
-                <ul>
-                    <li>Seguimiento de productos</li>
-                    <li>Continua comprando</li>
-                    <li>simula tu fecha de entrega</li>
-                    <li>Busca retiros serca de ti!</li>
-                </ul>
-
-                <div class="contact__social">
-                    <div class="btn__contact">
-                        <button class="btn">
-                            <i class="fa-brands fa-facebook fa-l"></i>
-                    
-                        </button>
-                    </div>
-
-                    <div class="btn__contact">
-                        <button class="btn">
-                            <i class="fa-brands fa-whatsapp fa-l"></i>
-                    
-                        </button>
-                    </div>
-
-                    <div class="btn__contact">
-                        <button class="btn">
-                            <i class="fa-brands fa-instagram fa-l"></i>
-                    
-                        </button>
-                    </div>
-                </div>
-    
-            </div>
-    
-            <div class="copy">
-                <img src="./" alt="">
-                <h5>Juan Herrera W. <span>Dev. disgn and FullStack dev.</span></h5>
-                <P>Pagina creada desde 0</P>
-            </div>
-        </div>
-
-    </footer>
-
-    
-
-    <!--template para los Productos-->
-
-    <template id="template__card__destacados">
-        <article class="card__products">
-            <div class="card__header">
-                <a href="#" class="cta cta__card cta__card--show">
-                    <i class="fa-solid fa-eye"></i>
-                </a>
-            
-
-                <a href="#" class="cta cta__card cta__card--heart">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-            </div>
-            <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
-            <h5 class="card__title">Name</h5>
-
-            <p class="card__paragraph">descripcion del producto no mas de 7 p</p>
-
-            <span class="card__price">$<span>3300</span></span>
-
-            <button
-                class="btn btn--product"
-            >
-                add to car
-            </button>
-
-        </article>
-    </template>
-
-    <template id="template__card__oferta">
-        <article class="card__products">
-            <div class="card__header">
-                <a href="#" class="cta cta__card cta__card--show">
-                    <i class="fa-solid fa-eye"></i>
-                </a>
-            
-
-                <a href="#" class="cta cta__card cta__card--heart">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-            </div>
-            <img src="./assets/apple-1282241_640.jpg" alt="card product name" class="card__img">
-            <h5 class="card__title">Name</h5>
-
-            <p class="card__paragraph">descripcion del producto no mas de 7 p</p>
-
-            <p class="card__price card__price--old">$<span>3300</span>-<span class="oldPrice">5500</span></p>
-
-            <button
-                class="btn btn--product"
-            >
-                add to car
-            </button>
-
-        </article>
-    </template>
-
-    <!--template para body Hero-->
-    <template id="template-hero">
-        <section class="hero-front hero-front--show" data-id="1">
-            <picture class="container__imgHero">
-                <source media="max-width: 768px" srcset="./assets/hd-wallpaper-g40ae1b32f_640.jpg">
-                <img src="./assets/hd-wallpaper-g60ad008bd_1280.jpg" width="100%" height="100%" alt="check" class="img__hero">
-            </picture>
-
-            <div class="hero__content">
-                <h1 class="hero__title">Nuestra mision GrowShop</h1>
-                <p class="hero__paragraph">Acabar con los estereotipos sociales mediebales 😑</p>
-                <a href="#" class="cta cta--hero" data-ctaHero="true">Aprende Mas!</a>
-            </div>
-        </section>
-    </template>
-
-    <script src="./app.js" type="module"></script>
-</body>
+        <script src="./app.js" type="module"></script>
+    </body>
 </html>
